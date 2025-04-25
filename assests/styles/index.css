@@ -33,8 +33,10 @@ p,
 h1,
 h2,
 h3,
-h4 {
+h4,
+ul {
   margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -55,6 +57,10 @@ header img {
 }
 
 /* hero */
+.hero-wrapper {
+  margin-bottom: 60px;
+}
+
 .hero-wrapper .hero-image {
   display: none;
 }
@@ -113,7 +119,7 @@ header img {
 }
 
 .hero-title {
-  font-size: 48px;
+  font-size: var(--font-xl);
   margin: 10px 0;
 }
 
@@ -163,4 +169,81 @@ header img {
 
 .online-order:hover {
   background-color: var(--hover-accent-color);
+}
+
+/* country */
+.country-wrapper {
+  margin-bottom: 60px;
+}
+
+.country-wrapper p {
+  font-size: var(--font-md);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.country-wrapper ul {
+  display: flex;
+  gap: 25px;
+  font-size: var(--font-sm);
+}
+
+.country-wrapper ul li p {
+  color: var(--sub-text-color);
+  margin-top: 10px;
+}
+
+/* suggestion */
+.suggestion-wrapper {
+  margin-bottom: 40px;
+}
+
+.suggestion-title {
+  font-size: var(--font-lg);
+  margin-bottom: 20px;
+}
+
+.suggestion-subtitle {
+  font-size: var(--font-sm);
+  color: var(--sub-text-color);
+  font-weight: 400;
+}
+
+.suggestion-shoes {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.suggestion-shoes ul li {
+  margin-bottom: 25px;
+}
+
+.suggestion-shoes ul li h3 {
+  font-size: var(--font-md);
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.suggestion-shoes ul li p {
+  font-size: var(--font-sm);
+  font-weight: 400;
+  color: var(--sub-text-color);
+}
+
+.suggestion-wrapper a {
+  text-decoration: none;
+  color: var(--sub-text-color);
+  border: solid 1px var(--sub-text-color);
+  padding: 8px 32px;
+  border-radius: 35px;
+  margin-top: 10px;
+}
+
+.suggestion-wrapper a:hover {
+  border: solid 1px var(--main-text-color);
+  color: var(--main-text-color);
+}
+
+.suggestion-shoes ul li:nth-child(n + 5) {
+  display: none;
 }
