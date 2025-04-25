@@ -3,8 +3,164 @@
   list-style: none;
 }
 
+:root {
+  --accent-color: #ce1212;
+  --hover-accent-color: #810000;
+  --sub-text-color: #1b1717a6;
+  --main-text-color: #1b1717;
+
+  --gap: 10px;
+
+  --font-sm: 14px;
+  --font-md: 16px;
+  --font-lg: 36px;
+  --font-xl: 48px;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Vazirmatn", sans-serif;
+  text-align: right;
+}
+
+h1,
+h2 {
+  font-family: "Lalezar", sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+.container {
+  width: 345px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* header */
+header {
+  padding: 30px 0 30px 0;
+  text-align: center;
+}
+
+header img {
+  width: 45px;
+  height: 30px;
+}
+
+/* hero */
+.hero-wrapper .hero-image {
+  display: none;
+}
+
+.hero-clients {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: row-reverse;
+  gap: var(--gap);
+}
+
+.client-nums {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5px;
+  font-size: var(--font-sm);
+}
+
+.client-images {
+  min-width: 70px;
+  min-height: 24px;
+}
+
+.client-nums .number {
+  font-weight: 700;
+  color: var(--main-text-color);
+}
+
+.client-nums .num-text {
+  color: var(--sub-text-color);
+}
+
+.client-one {
+  position: absolute;
+  z-index: 1;
+  right: 45px;
+}
+
+.client-two {
+  position: absolute;
+  z-index: 2;
+  right: 30px;
+}
+
+.client-three {
+  position: absolute;
+  z-index: 3;
+  right: 15px;
+}
+
+.client-four {
+  position: absolute;
+  z-index: 4;
+  right: 0;
+}
+
+.hero-title {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.hero-subtitle {
+  font-size: var(--font-sm);
+  color: var(--sub-text-color);
+  margin-bottom: 10px;
+}
+
+.hero-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.hero-btns a {
+  text-decoration: none;
+  font-size: var(--font-sm);
+  text-align: center;
+}
+
+.call-clients {
+  color: var(--sub-text-color);
+  width: fit-content;
+  border: solid 1px var(--sub-text-color);
+  border-radius: 35px;
+  padding: 8px 32px;
+}
+
+.call-clients:hover {
+  color: var(--main-text-color);
+  border: solid 1px var(--main-text-color);
+}
+
+.online-order {
+  display: flex;
+  width: fit-content;
+  flex-direction: row-reverse;
+  gap: var(--gap);
+  align-items: center;
+  padding: 8px 32px;
+  color: white;
+  background-color: var(--accent-color);
+  border-radius: 35px;
+}
+
+.online-order:hover {
+  background-color: var(--hover-accent-color);
 }
