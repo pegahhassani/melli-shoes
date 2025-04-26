@@ -81,8 +81,11 @@ header img {
 }
 
 .client-images {
-  min-width: 70px;
-  min-height: 24px;
+  display: flex;
+}
+
+.client-images li {
+  margin-right: -10px;
 }
 
 .client-nums .number {
@@ -92,30 +95,6 @@ header img {
 
 .client-nums .num-text {
   color: var(--sub-text-color);
-}
-
-.client-one {
-  position: absolute;
-  z-index: 1;
-  right: 45px;
-}
-
-.client-two {
-  position: absolute;
-  z-index: 2;
-  right: 30px;
-}
-
-.client-three {
-  position: absolute;
-  z-index: 3;
-  right: 15px;
-}
-
-.client-four {
-  position: absolute;
-  z-index: 4;
-  right: 0;
 }
 
 .hero-title {
@@ -183,6 +162,7 @@ header img {
 
   .hero-wrapper .hero-image {
     display: block;
+    filter: drop-shadow(0 15px 10px rgba(0, 0, 0, 0.5));
   }
 
   .hero-wrapper {
@@ -215,6 +195,10 @@ header img {
   margin-bottom: 60px;
 }
 
+.colorful {
+  visibility: hidden;
+}
+
 .country-wrapper p {
   font-size: var(--font-md);
   font-weight: 500;
@@ -240,6 +224,10 @@ header img {
   .country-wrapper ul {
     justify-content: center;
     gap: 51px;
+  }
+
+  .country-item:hover .colorful {
+    visibility: visible;
   }
 }
 
